@@ -32,6 +32,7 @@ return (
           <Typography variant="h4" color="secondary">${(product.price / 100).toFixed(2)}</Typography>
 
           <TableContainer>
+
             <Table sx={{' & td': {fontSize: '1rem'}}}>
               <TableBody>
                 {productDetails.map((detail, index) =>
@@ -40,9 +41,10 @@ return (
                   <TableCell>{detail.value}</TableCell>
                 </TableRow>
                 )}
-                
+              
               </TableBody>
             </Table>
+
           </TableContainer>
 
           <Grid2 container spacing={2} marginTop={3}>
